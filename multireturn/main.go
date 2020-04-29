@@ -11,15 +11,15 @@ func main() {
 	}
 }
 
-func searchString(word string) (string, bool) {
+func searchString(word string) (string, string, bool) {
 	s := [...]string{"vscode", "sublime", "node", "net beans"}
 	wordslice := s[0:]
 
 	for i := 0; i < len(s); i++ {
 		if wordslice[i] == word {
-			return "found", true
+			return "found", word, true
 		}
 
 	}
-	return "not found ", false
+	return "not found ", word, false
 }
