@@ -3,11 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	status, ok := searchString("sublime")
+	status, word, ok := searchString("sublime")
 	if !ok {
-		fmt.Println(status)
+		fmt.Println(status, word)
 	} else {
-		fmt.Println(status)
+		fmt.Println(status, word)
 	}
 }
 

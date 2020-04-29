@@ -18,7 +18,7 @@ func main() {
 	barang[6] = product{nama: "Doritos", harga: 12000, stock: 4}
 	fmt.Println("STOK KURANG DARI 10")
 	for _, value := range barang {
-		if value.stock <= 10 {
+		if value.stock < 10 {
 			fmt.Println("Product = " + value.nama)
 			fmt.Println("harga = ", value.harga)
 			fmt.Println("stok = ", value.stock)
